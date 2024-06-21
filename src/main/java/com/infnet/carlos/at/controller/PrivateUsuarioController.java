@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("api/private")
 public class PrivateUsuarioController {
 
-    @GetMapping("/teste")
-    public String teste(){
-    return "Testando autenticação e autorização";
+    @GetMapping("/validar")
+    public String validar(){
+    return "esta autenticado";
     }
 
 }
