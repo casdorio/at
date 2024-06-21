@@ -16,7 +16,7 @@ public class FuncionarioController {
     @Autowired
     private FuncionarioService funcionarioService;
 
-    @PostMapping("/funcionarios/{id}")
+    @PostMapping("/funcionarios/departamento/{id}")
     public Funcionario create(@PathVariable Long id, @RequestBody Funcionario funcionario) {
         return funcionarioService.create(id, funcionario);
     }
